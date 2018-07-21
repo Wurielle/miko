@@ -1,0 +1,40 @@
+// Imports --------------------------------------------------------------------
+@import "positions/_positions"
+@import "displays/_displays"
+@import "sizes/_sizes"
+@import "shapes/_shapes"
+@import "shadows/_shadows"
+// Utilities -------------------------------------------------------------------
+// @each $bp, $bp-value in $bp-list
+//     @media (min-width: $bp-value)
+//         #{u(border-style, $bp)}
+//         #{u(border-width, $bp)}
+//         #{u(border-color, $bp)}
+//         #{u(border-color, $bp)}
+@each $bp, $bp-value in $bp-list
+    #{u(border-style-solid, $bp)}
+        border-style: solid
+        
+    #{u(cursor-pointer, $bp)}
+        cursor: pointer
+        
+    #{u(cursor-auto, $bp)}
+        cursor: auto
+
+    #{u(background-cover, $bp)}
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
+    
+.disable-scrollable
+    background-color: $color--blackish
+    cursor: pointer
+    .scrollable
+        display: block
+        pointer-events: none
+        position: relative
+        opacity: 0.75
+        transition: opacity 0.3s cubic-bezier(.165,.84,.44,1)
+        &.active
+            opacity: 1
+            pointer-events: auto

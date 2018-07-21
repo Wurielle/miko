@@ -1,0 +1,130 @@
+// Buttons ---------------------------------------------------------------------
+#{_(button)},
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"]
+    display: inline-block
+    height: $button-height
+    line-height: $button-height - $button-border-top-width - $button-border-bottom-width
+    padding: $button-padding
+    color: $color--font
+    text-align: center
+    font-size: $button-font-size
+    font-weight: $button-font-weight
+    letter-spacing: $button-letter-spacing
+    text-transform: uppercase
+    text-decoration: none
+    white-space: nowrap
+    background-color: white
+    border-radius: $button-border-radius
+    border: $button-border-style $color--border
+    border-top-width: $button-border-top-width
+    border-left-width: $button-border-left-width
+    border-right-width: $button-border-right-width
+    border-bottom-width: $button-border-bottom-width
+    cursor: pointer
+    box-shadow: $box-shadow
+    transition: $animation2
+    &:focus
+        outline: 0!important
+    &:hover,
+
+        color: $color--primary
+        border-color: $color--primary
+        outline: 0
+        box-shadow: $box-shadow2
+    &:active
+        box-shadow: none
+    &#{_(button-small)}
+        height: unit(xs)
+        line-height: unit(xs) - $button-border-top-width - $button-border-bottom-width
+    &[type="submit"]
+        background-color: $color--success
+        border-color: $color--success
+        color: white
+        &:hover
+            background-color: darken($color--success, 10%)
+            border-color: darken($color--success, 10%)
+    @each $state, $state-value in $state-list
+        &#{_(button-#{$state})}
+            color: white
+            background-color: $state-value
+            border-color: $state-value
+            &:hover,
+
+                background-color: darken($state-value, 10%)
+                border-color: darken($state-value, 10%)
+    &#{_(button-ghost)}
+        border-color: transparent
+        &:hover,
+
+            border-color: $color--whitest-grey
+            background-color: $color--whitest-grey
+    &#{_(button-silent)}
+        border-color: transparent
+        background-color: transparent
+        &:hover,
+
+            background-color: transparent
+    &#{_(button-dashed)}
+        border-color: $color--border-dark
+        background-color: transparent
+        &:hover,
+
+            color: $color--primary
+            border-color: $color--primary
+            background-color: transparent
+    &#{_(button-square)}
+        width: $button-height
+        padding: 0
+        text-align: center
+        &#{_(button-small)}
+            width: unit(xs)
+    &#{_(button-round)}
+        padding: 0
+        border-radius: 9999px
+    &#{_(button-disabled)}
+        opacity: 0.5
+        pointer-events: none
+
+// Utilities -------------------------------------------------------------------
+
+@each $bp, $bp-value in $bp-list
+    @media (min-width: $bp-value)
+
+        #{u(button-padding, $bp)}
+            padding: $button-padding
+
+        #{u(button-height, $bp)}
+            height: $button-height
+
+        #{u(button-border-width, $bp)}
+            border-width: $button-border-width
+
+        #{u(button-border-top-width, $bp)}
+            border-top-width: $button-border-top-width
+
+        #{u(button-border-left-width, $bp)}
+            border-left-width: $button-border-left-width
+
+        #{u(button-border-right-width, $bp)}
+            border-right-width: $button-border-right-width
+
+        #{u(button-border-bottom-width, $bp)}
+            border-bottom-width: $button-border-bottom-width
+
+        #{u(button-border-radius, $bp)}
+            border-radius: $button-border-radius
+
+        #{u(button-border-style, $bp)}
+            border-style: $button-border-style
+
+        #{u(button-font-size, $bp)}
+            font-size: $button-font-size
+
+        #{u(button-font-weight, $bp)}
+            font-weight: $button-font-weight
+
+        #{u(button-letter-spacing, $bp)}
+            letter-spacing: $button-letter-spacing

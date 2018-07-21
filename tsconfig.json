@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "outDir": "./assets/js/",
+        "moduleResolution": "node",
+        "noImplicitAny": false,
+        "module": "es6",
+        "target": "es5",
+        "jsx": "react",
+        "allowJs": true,
+        "experimentalDecorators": true,
+        "lib": ["dom", "esnext"]
+    },
+    "files": [
+        "./src/js/main.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "vendor"
+    ]
+}

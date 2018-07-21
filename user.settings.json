@@ -1,0 +1,9 @@
+{
+    "browsersync": {
+            "port": 3000,
+            "enabled": true,
+            "open": true,
+            "notify": false,
+            "proxy": ""
+        }
+}

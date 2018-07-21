@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+<div id="app" class="u-flex">
+    <vue-main></vue-main>
+</div>
+    <script>
+        if (typeof require === 'function'){
+            window.electron = require('electron');
+        }
+    </script>
+    <script src="./assets/js/main.bundle.js"></script>
+    <script src="./process/renderer.js"></script>
+
+</body>
+</html>

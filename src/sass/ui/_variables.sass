@@ -1,0 +1,102 @@
+// Framework
+$prefix: 'ui-'
+$utility-prefix: 'u-'
+
+// Other -----------------------------------------------------------------------
+$spacing-unit: 15px // height of most elements
+$unit: 44px // height of most elements
+
+$border-width: 1px
+$border-radius: 4px
+$border-style: solid
+$box-shadow: 0px 2px 6px rgba(0,0,0,0.1)
+$box-shadow2: 0px 1px 2px rgba(0,0,0,0.1)
+$box-shadow3: 0px 2px 8px rgba(0, 0, 0, 0.4)
+// Greyscale--------------------------------------------------------------------
+$color--whitest-grey: #f8f9ff
+$color--whitesmoke: #EFEFEF
+$color--light-grey: #D8D8D8
+$color--grey: #9B9B9B
+$color--dark-grey: #4A4A4A
+$color--blackish: #333333
+$color--blackest-grey: #62676D
+
+// Main Colors -----------------------------------------------------------------
+$color--green: #3ecf8e
+$color--red: #f85465
+$color--orange: #f4bd60
+$color--blue: #039be5
+
+// States Colors ---------------------------------------------------------------
+$color--primary: #258DFC
+$color--primary-dark: darken($color--primary, 10%)
+$color--secondary: #57c4ff
+$color--success: $color--green
+$color--danger: $color--red
+$color--warning: $color--orange
+
+// Misc Colors -----------------------------------------------------------------
+$color--font: $color--dark-grey
+$color--font-light: $color--light-grey
+$color--font-dark: $color--blackish
+$color--border: #BABACC
+$color--border-dark: $color--light-grey
+$color--border-transparent: rgba($color--border, 0.2)
+
+// Grid & Spacing --------------------------------------------------------------
+$bp-list: ( min: 0, xxs: 480px, xs: 640px, sm: 768px, md: 1000px, lg: 1200px, xlg: 1400px )
+$unit-list: ( min: $unit, xxs: 18px, xs: 24px, sm: 28px, md: $unit, lg: 40px, xlg: 50px )
+$sp-list: ( min: $spacing-unit, xxs: 4px, xs: 5px, sm: 10px, md: $spacing-unit, lg: 24px, xlg: 55px, xxlg: 75px )
+$fs-list: ( min: 0, xxs: .9rem, xs: 1rem, sm: 1.2rem, md: 1.4rem, lg: 1.8rem, xlg: 2.2rem, xxlg: 3rem )
+$state-list: ( primary: $color--primary, secondary: $color--secondary, success: $color--success, danger: $color--danger, warning: $color--warning, grey: $color--grey, transparent: transparent, black: $color--blackest-grey, background: #F6F5FB )
+$shadow-list: ( min: $box-shadow )
+$border-radius-list: ( min: $border-radius, xxs: 2px, xs: 3px, sm: 5px, md: 6px, lg: 10px, xlg: 16px, full: 9999px )
+$border-width-list: ( min: $border-width, xxs: 1px, xs: 2px, sm: 3px, md: 4px, lg: 5px, xlg: 6px )
+
+@function unit($size)
+    @return map-get($unit-list, $size)
+@function bp($bp)
+    @return map-get($bp-list, $bp)
+@function sp($sp)
+    @return map-get($sp-list, $sp)
+@function fs($fs)
+    @return map-get($fs-list, $fs)
+@function _($classname, $bp:null, $size:null)
+    @if $bp
+        $bp: if($bp == 'min', '', '#{$bp}\\:')
+    @else
+        $bp: ''
+    @if $size
+        $size: if($size == 'min', '', '\\:#{$size}')
+    @else
+        $size: ''
+    @return '.#{$bp}#{$prefix}#{$classname}#{$size}'
+@function u($classname, $bp:null, $size:null)
+    @if $bp
+        $bp: if($bp == 'min', '', '#{$bp}\\:')
+    @else
+        $bp: ''
+    @if $size
+        $size: if($size == 'min', '', '\\:#{$size}')
+    @else
+        $size: ''
+    @return '.#{$bp}#{$utility-prefix}#{$classname}#{$size}, .hover\\:#{$bp}#{$utility-prefix}#{$classname}#{$size}:hover, .focus\\:#{$bp}#{$utility-prefix}#{$classname}#{$size}:focus'
+
+// Complete Variables (Accessible for vue components) --------------------------
+@import "animations/_variables"
+@import "grid/_variables"
+@import "spacing/_variables"
+@import "typography/_variables"
+@import "base/_variables"
+@import "links/_variables"
+@import "buttons/_variables"
+@import "forms/_variables"
+@import "lists/_variables"
+@import "code/_variables"
+@import "tables/_variables"
+@import "utilities/_variables"
+@import "misc/_variables"
+@import "clearing/_variables"
+@import "icons/_variables"
+@import "flex/_variables"
+@import "states/_variables"
