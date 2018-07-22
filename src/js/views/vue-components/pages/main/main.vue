@@ -83,6 +83,8 @@
                 active: false,
                 thumbnail: null,
                 closed: false,
+                canGoBack: false,
+                canGoForward: false,
             }
         };
         @Watch('placeholder')

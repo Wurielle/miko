@@ -11,7 +11,7 @@
 </style>
 
 <template>
-    <webview ref="webview" :src="website.url" :class="{'shown': website.active}"></webview>
+    <webview ref="webview" :class="{'shown': website.active}"></webview>
 </template>
 
 <script lang="ts">
@@ -37,16 +37,33 @@
 
         }
         mounted() {
+            (this.$refs.webview as any).setAttribute('src', this.website.url);
             this.bindListeners();
         }
         bindListeners(){
             (this.$refs.webview as any).addEventListener('did-navigate',this.onNavigation);
             (this.$refs.webview as any).addEventListener('page-title-updated',this.onTitleUpdate);
+            (this as any).EventBus.$on('historyBack',this.onHistoryBack);
+            (this as any).EventBus.$on('historyForward',this.onHistoryForward);
+        }
+        onHistoryBack(website: any){
+            if(website === this.website && (this.$refs.webview as any).canGoBack()){
+                console.log('onHistoryBack');
+                (this.$refs.webview as any).goBack();
+            }
+        }
+        onHistoryForward(website: any){
+            if(website === this.website && (this.$refs.webview as any).canGoForward()){
+                console.log('onHistoryForward');
+                (this.$refs.webview as any).goForward();
+            }
         }
         onNavigation(event: any){
-            console.log(event);
+            console.log(event, this.website);
             let url = event.url;
             this.website.url = url;
+            this.website.canGoBack = (this.$refs.webview as any).canGoBack();
+            this.website.canGoForward = (this.$refs.webview as any).canGoForward();
         }
         onTitleUpdate(event: any){
             let title = event.title;
