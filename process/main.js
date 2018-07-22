@@ -40,9 +40,11 @@ const {
     Menu,
     remote
 } = electron
+const _ = require('lodash');
 const path = require('path');
 const url = require('url');
 const fs = require('fs');
+const  { TweenLite } = require('gsap');
 
 if (process.env.NODE_ENV && process.env.NODE_ENV.trim() === 'developement') {
     require('electron-reload')(path.join(__dirname, '../'));
@@ -57,7 +59,7 @@ if (process.env.NODE_ENV && process.env.NODE_ENV.trim() === 'developement') {
 // Other Modules
 //------------------------------------------------------------------------------
 // const keyboards = require('./data/keyboards.json')
-const iconPath = path.join(__dirname, 'assets/images/icon-64x64.png');
+const iconPath = path.join(__dirname, '../assets/images/icon-64x64.png');
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -72,6 +74,8 @@ let trayObject = {
     title: package.productName + ' is running',
     message: package.productName + ' is running'
 };
+let targetDisplay;
+let shown = false;
 //------------------------------------------------------------------------------
 // User Settings
 //------------------------------------------------------------------------------
@@ -84,6 +88,7 @@ function log(message) {
     mainWindow.webContents.send('toApp', { name: 'log', payload: message });
 }
 function createAll() {
+    createTrayIcon();
     createMainWindow();
 }
 
@@ -92,38 +97,39 @@ function initDefinitions() {
 }
 
 function createTrayIcon() {
-    // // Tray icon
-    // const menu = Menu.buildFromTemplate([
-    //     { role: "quit" }, // "role": system prepared action menu
-    // ])
-    // tray = new Tray(iconPath)
-    // tray.setToolTip(package.productName)
-    // tray.setContextMenu(menu)
-    // // tray.setToolTip("hello electrol")
-    // //tray.setTitle("Tray Example") // macOS only
-    //
-    // // Events
-    // tray.on('click', () => {
-    //     mainWindow.isVisible() ? mainWindow.hide() : mainWindow.show()
-    // })
+    // Tray icon
+    console.log(iconPath);
+    const menu = Menu.buildFromTemplate([
+        { role: "quit" }, // "role": system prepared action menu
+    ]);
+    tray = new Tray(iconPath);
+    tray.setToolTip(package.productName + ' - CTRL+Tab');
+    tray.setContextMenu(menu);
 }
 
 function createMainWindow() {
+    const {width, height} = electron.screen.getPrimaryDisplay().workAreaSize
+    let allDisplays = electron.screen.getAllDisplays();
+    targetDisplay = _.minBy(allDisplays, function(display){
+       return  display.bounds.x;
+    });
     // Main window
     mainWindow = new BrowserWindow({
-        width: 1366,
-        height: 768,
-        // x: 0,
-        // y: 0,
-        // frame: false,
+        width: targetDisplay.workArea.width/2,
+        height: targetDisplay.workArea.height,
+        x: targetDisplay.workArea.x - targetDisplay.workArea.width/2,
+        y: targetDisplay.workArea.y,
+        frame: false,
         // show: false,
         // transparent: true,
         // fullscreen: true,
+        alwaysOnTop: true,
         center: true,
         maximizable: true,
         resizable: true,
+        skipTaskbar: true,
         // titleBarStyle: 'hidden', // macOS,
-        icon: __dirname + '/assets/images/icon-32x32.png.png'
+        icon: path.join(__dirname, '../assets/images/icon-32x32.png')
     });
     mainWindow.setMenu(null);
     mainWindow.loadURL(url.format({
@@ -137,10 +143,15 @@ function createMainWindow() {
         startAutoUpdater();
         console.log('Started Auto Updater from main process');
     });
+    mainWindow.on('blur', function(){
+        toggleShow(true, false);
+    });
 
     globalShortcut.register('CommandOrControl+Shift+F12', () => {
         mainWindow.webContents.openDevTools();
     });
+
+    globalShortcut.register('CommandOrControl+Tab', toggleShow);
     // Events
     // mainWindow.on('closed', quit)
     // mainWindow.on('show', () => {
@@ -166,7 +177,7 @@ function quit() {
     // globalShortcut.unregisterAll()
     // mainWindow.close()
     // globalWindow.close()
-    // tray = null
+    tray = null
     mainWindow = null;
 }
 
@@ -188,6 +199,60 @@ function maximize() {
 }
 function close() {
     // hideMain();
+}
+function show(bounds, target) {
+    TweenLite.to(bounds, .3, {x: target.x, roundProps:"x",
+        onUpdate: function(){
+            mainWindow.setPosition(bounds.x, bounds.y);
+            mainWindow.focus();
+        },
+        onComplete: function(){
+            mainWindow.setPosition(target.x, target.y);
+            mainWindow.focus();
+        }
+    });
+
+}
+function hide(bounds, target) {
+    TweenLite.to(bounds, .3, {x: target.x - bounds.width, roundProps:"x",
+        onUpdate: function(){
+            mainWindow.setPosition(bounds.x, bounds.y);
+        },
+        onComplete: function(){
+            mainWindow.setPosition(target.x - bounds.width, target.y);
+        }
+    });
+
+}
+function toggleShow(forceShown, immediate) {
+    shown = forceShown || shown;
+    immediate = immediate || false;
+    let bounds = {
+        x: mainWindow.getPosition()[0],
+        y: mainWindow.getPosition()[1],
+        width: mainWindow.getSize()[0],
+        height: mainWindow.getSize()[1]
+    };
+    let targetDisplayPostion = {
+        x: targetDisplay.workArea.x,
+        y: targetDisplay.workArea.y
+    };
+    if(!shown){
+        if (!immediate) {
+            // console.log('show');
+            show(bounds, targetDisplayPostion);
+        } else {
+            mainWindow.setPosition(targetDisplayPostion.x);
+        }
+    } else {
+        if (!immediate){
+            // console.log('hide');
+            hide(bounds, targetDisplayPostion);
+        } else {
+            mainWindow.setPosition(targetDisplayPostion.x - bounds.width, target.y);
+        }
+    }
+    shown = !shown;
 }
 function closeGlobal() {
 
