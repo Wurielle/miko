@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a6336f9-1460-498b-a4bf-13bea3b75d11" name="Default" comment="hello world">
+    <list default="true" id="7a6336f9-1460-498b-a4bf-13bea3b75d11" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/process/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/process/main.js" afterDir="false" />
     </list>
@@ -86,8 +86,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="120">
-                <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
+              <first_editor relative-caret-position="140">
+                <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
               </first_editor>
               <second_editor />
             </state>
@@ -376,6 +376,15 @@
       <node-interpreter value="project" />
       <envs />
     </configuration>
+    <configuration name="e:b:publish" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="e:b:publish" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+    </configuration>
     <configuration name="e:s" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -398,9 +407,11 @@
       <item itemvalue="npm.w:w" />
       <item itemvalue="npm.e:s" />
       <item itemvalue="npm.e:b" />
+      <item itemvalue="npm.e:b:publish" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.e:b:publish" />
         <item itemvalue="npm.e:b" />
         <item itemvalue="npm.e:s" />
         <item itemvalue="npm.w:w" />
@@ -424,7 +435,7 @@
       <workItem from="1532106604968" duration="2731000" />
       <workItem from="1532113693337" duration="2739000" />
       <workItem from="1532163045923" duration="25081000" />
-      <workItem from="1532247045090" duration="15938000" />
+      <workItem from="1532247045090" duration="16660000" />
     </task>
     <task id="LOCAL-00001" summary="image lazy load test">
       <created>1531599427984</created>
@@ -433,18 +444,25 @@
       <option name="project" value="LOCAL" />
       <updated>1531599427984</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="- Added README">
+      <created>1532274325897</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1532274325897</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83630000" />
+    <option name="totallyTimeSpent" value="84352000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="8" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48740417" visible="true" weight="0.123222746" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48740417" visible="true" weight="0.123222746" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
@@ -476,7 +494,8 @@
     <MESSAGE value="image lazy load test" />
     <MESSAGE value="file pathing" />
     <MESSAGE value="quick rebase" />
-    <option name="LAST_COMMIT_MESSAGE" value="quick rebase" />
+    <MESSAGE value="- Added README" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Added README" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -726,8 +745,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="120">
-            <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
+          <first_editor relative-caret-position="140">
+            <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
           </first_editor>
           <second_editor />
         </state>
