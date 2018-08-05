@@ -53,7 +53,7 @@ if (process.env.NODE_ENV && process.env.NODE_ENV.trim() === 'developement') {
 //------------------------------------------------------------------------------
 // External Modules
 //------------------------------------------------------------------------------
-// const AutoLaunch = require('auto-launch')
+const AutoLaunch = require('auto-launch')
 
 //------------------------------------------------------------------------------
 // Other Modules
@@ -307,15 +307,15 @@ app.on('before-quit', quit);
 //------------------------------------------------------------------------------
 // Auto Launcher
 //------------------------------------------------------------------------------
-// let appAutoLauncher = new AutoLaunch({
-//     name: package.productName,
-//     path: app.getPath('exe'),
-// })
+let appAutoLauncher = new AutoLaunch({
+    name: package.productName,
+    path: app.getPath('exe'),
+})
 
-// appAutoLauncher.enable()
-// appAutoLauncher.isEnabled().then((isEnabled) => {
-//     if (!isEnabled) appAutoLauncher.enable()
-// })
+appAutoLauncher.enable()
+appAutoLauncher.isEnabled().then((isEnabled) => {
+    if (!isEnabled) appAutoLauncher.enable()
+});
 
 //------------------------------------------------------------------------------
 // Auto updates

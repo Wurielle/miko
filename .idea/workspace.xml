@@ -3,7 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="7a6336f9-1460-498b-a4bf-13bea3b75d11" name="Default" comment="- Added README">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/main.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/main.bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.bundle.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/process/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/process/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/views/vue-components/pages/main/main.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/views/vue-components/pages/main/main.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/views/vue-components/pages/page/page.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/views/vue-components/pages/page/page.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/views/vue-components/ui/tab/tab.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/views/vue-components/ui/tab/tab.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/ui/_variables.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/ui/_variables.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/ui/states/_states.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/ui/states/_states.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/ui/utilities/_utilities.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/ui/utilities/_utilities.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/ui/utilities/shadows/_shadows.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/ui/utilities/shadows/_shadows.sass" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,32 +29,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+      <file leaf-file-name="page.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/views/vue-components/pages/page/page.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="4" column="69" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="69" />
+            <state relative-caret-position="520">
+              <caret line="26" column="30" selection-end-line="117" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="paths.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/routers/paths.ts">
+      <file leaf-file-name="preload.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/preload.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="46" selection-start-column="46" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/main.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-              <folding>
-                <element signature="e#16#43#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="240">
+              <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -48,66 +50,70 @@
       <file leaf-file-name="main.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/views/vue-components/pages/main/main.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="76" column="53" selection-start-line="76" selection-start-column="53" selection-end-line="76" selection-end-column="53" />
+            <state>
+              <caret column="26" selection-start-column="26" selection-end-line="1" selection-end-column="38" />
+              <folding>
+                <element signature="e#5623#5650#0" expanded="true" />
+                <element signature="e#6454#6514#0" expanded="true" />
+              </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_utilities.sass" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sass/ui/utilities/_utilities.sass">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_displays.sass" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sass/ui/utilities/displays/_displays.sass">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="17" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="option-javascript.vue" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/js/views/vue-components/options/option-javascript/option-javascript.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+              <folding>
+                <element signature="e#1191#1218#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_typography.sass" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sass/ui/typography/_typography.sass">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="_variables.sass" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sass/ui/typography/_variables.sass">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="5" column="17" selection-start-line="5" selection-end-line="5" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_positions.sass" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sass/ui/utilities/positions/_positions.sass">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="tab.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/views/vue-components/ui/tab/tab.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="70" column="141" selection-start-line="70" selection-start-column="141" selection-end-line="70" selection-end-column="141" />
-              <caret line="71" column="144" selection-start-line="71" selection-start-column="144" selection-end-line="71" selection-end-column="144" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/views/vue-components/pages/page/page.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="727">
-              <caret line="65" column="80" selection-start-line="65" selection-start-column="80" selection-end-line="65" selection-end-column="80" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/process/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-240">
-              <caret line="105" column="54" selection-start-line="105" selection-start-column="54" selection-end-line="105" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="140">
-                <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="61" column="6" selection-start-line="61" selection-start-column="6" selection-end-line="61" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_variables.sass" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sass/ui/_variables.sass">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="44" selection-start-line="44" selection-end-line="44" />
+            <state relative-caret-position="260">
+              <caret line="88" column="98" selection-start-line="88" selection-start-column="86" selection-end-line="88" selection-end-column="98" />
             </state>
           </provider>
         </entry>
@@ -117,8 +123,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Vue Single File Component" />
         <option value="TypeScript File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
@@ -141,6 +147,7 @@
       <find>iconPath</find>
       <find>32x32</find>
       <find>gsap</find>
+      <find>box-shadow</find>
     </findStrings>
     <replaceStrings>
       <replace>loadFile</replace>
@@ -173,8 +180,6 @@
         <option value="$PROJECT_DIR$/src/js/views/vue-components/pages/test.vue" />
         <option value="$PROJECT_DIR$/src/js/views/vue-components/file-pathing/FilePathing.vue" />
         <option value="$PROJECT_DIR$/process/data/api.json" />
-        <option value="$PROJECT_DIR$/src/sass/main.sass" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/project-paths.js" />
         <option value="$PROJECT_DIR$/src/sass/ui/forms/_variables.sass" />
         <option value="$PROJECT_DIR$/src/sass/ui/base/_base.sass" />
@@ -183,16 +188,25 @@
         <option value="$PROJECT_DIR$/src/sass/ui/forms/_forms.sass" />
         <option value="$PROJECT_DIR$/src/sass/ui/buttons/_buttons.sass" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
-        <option value="$PROJECT_DIR$/src/sass/ui/_variables.sass" />
         <option value="$PROJECT_DIR$/src/js/views/vue-components/mixins/common-mixin.ts" />
-        <option value="$PROJECT_DIR$/src/js/main.ts" />
-        <option value="$PROJECT_DIR$/src/js/views/vue-components/pages/page/page.vue" />
-        <option value="$PROJECT_DIR$/src/js/views/vue-components/pages/main/main.vue" />
-        <option value="$PROJECT_DIR$/src/js/views/vue-components/ui/tab/tab.vue" />
-        <option value="$PROJECT_DIR$/process/main.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="E:/SteamLibrary/steamapps/common/No Man's Sky/Binaries/SETTINGS/TKGRAPHICSSETTINGS.MXML" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/src/sass/ui/utilities/shadows/_shadows.sass" />
+        <option value="$PROJECT_DIR$/src/sass/ui/utilities/_utilities.sass" />
+        <option value="$PROJECT_DIR$/src/sass/main.sass" />
+        <option value="$PROJECT_DIR$/src/sass/ui/states/_states.sass" />
+        <option value="$PROJECT_DIR$/src/sass/ui/_variables.sass" />
+        <option value="$PROJECT_DIR$/process/renderer.js" />
+        <option value="$PROJECT_DIR$/process/main.js" />
+        <option value="$PROJECT_DIR$/src/js/main.ts" />
+        <option value="$PROJECT_DIR$/src/js/views/vue-components/ui/tab/tab.vue" />
+        <option value="$PROJECT_DIR$/src/js/views/vue-components/pages/page/page.vue" />
+        <option value="$PROJECT_DIR$/preload.js" />
+        <option value="$PROJECT_DIR$/src/js/views/vue-components/pages/main/main.vue" />
+        <option value="$PROJECT_DIR$/src/js/views/vue-components/options/option-javascript/option-javascript.vue" />
       </list>
     </option>
   </component>
@@ -279,6 +293,25 @@
               <item name="js" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="vue-components" type="462c0819:PsiDirectoryNode" />
+              <item name="options" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mega-flemme" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mega-flemme" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="vue-components" type="462c0819:PsiDirectoryNode" />
+              <item name="options" type="462c0819:PsiDirectoryNode" />
+              <item name="option-javascript" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mega-flemme" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mega-flemme" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="vue-components" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -305,25 +338,6 @@
               <item name="mega-flemme" type="b2602c69:ProjectViewProjectNode" />
               <item name="mega-flemme" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="vue-components" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mega-flemme" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mega-flemme" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="vue-components" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="tab" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mega-flemme" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mega-flemme" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="sass" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -332,6 +346,65 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="sass" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mega-flemme" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mega-flemme" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sass" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mega-flemme" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mega-flemme" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sass" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="states" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mega-flemme" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mega-flemme" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sass" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="typography" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mega-flemme" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mega-flemme" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sass" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="utilities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mega-flemme" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mega-flemme" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sass" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="utilities" type="462c0819:PsiDirectoryNode" />
+              <item name="displays" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mega-flemme" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mega-flemme" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sass" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="utilities" type="462c0819:PsiDirectoryNode" />
+              <item name="positions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mega-flemme" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mega-flemme" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sass" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="utilities" type="462c0819:PsiDirectoryNode" />
+              <item name="shapes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -415,10 +488,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.e:b:publish" />
-        <item itemvalue="npm.e:b" />
         <item itemvalue="npm.e:s" />
         <item itemvalue="npm.w:w" />
+        <item itemvalue="npm.e:b:publish" />
+        <item itemvalue="npm.e:b" />
       </list>
     </recent_temporary>
   </component>
@@ -439,7 +512,13 @@
       <workItem from="1532106604968" duration="2731000" />
       <workItem from="1532113693337" duration="2739000" />
       <workItem from="1532163045923" duration="25081000" />
-      <workItem from="1532247045090" duration="16951000" />
+      <workItem from="1532247045090" duration="18150000" />
+      <workItem from="1532550477993" duration="51000" />
+      <workItem from="1532719133652" duration="599000" />
+      <workItem from="1532807688625" duration="1936000" />
+      <workItem from="1532852172970" duration="599000" />
+      <workItem from="1533369770498" duration="24367000" />
+      <workItem from="1533455091665" duration="8198000" />
     </task>
     <task id="LOCAL-00001" summary="image lazy load test">
       <created>1531599427984</created>
@@ -466,32 +545,53 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84643000" />
+    <option name="totallyTimeSpent" value="121592000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="TypeScript" order="8" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4869281" visible="true" weight="0.123222746" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32968238" />
-      <window_info id="npm" order="2" sideWeight="0.5130719" side_tool="true" visible="true" weight="0.123222746" />
+      <window_info anchor="bottom" id="TypeScript" order="7" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48039216" visible="true" weight="0.124068156" />
+      <window_info anchor="bottom" id="TODO" order="5" />
+      <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info active="true" anchor="right" id="Run" order="3" visible="true" weight="0.20447284" />
+      <window_info id="npm" order="2" sideWeight="0.51960784" side_tool="true" weight="0.12427594" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32968238" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32968238" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32968238" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
+      <window_info id="npm" order="2" sideWeight="0.5180723" side_tool="true" weight="0.12460064" />
+      <window_info anchor="right" id="Run" order="3" visible="true" weight="0.20234291" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="5" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="TypeScript" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32968238" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32968238" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48192772" visible="true" weight="0.12460064" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -509,64 +609,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="- Added README" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1720">
-          <caret line="86" column="11" selection-start-line="86" selection-start-column="11" selection-end-line="86" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1120">
-          <caret line="61" column="27" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/views/vue-components/file-pathing/FilePathing.vue" />
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/node/index.d.ts" />
-    <entry file="file://$PROJECT_DIR$/renderer.js" />
-    <entry file="file://$PROJECT_DIR$/src/assets/images/photo-1531494391841-6ac2ef3859b8.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/downloader.js" />
-    <entry file="file://$PROJECT_DIR$/main.js" />
-    <entry file="file://$PROJECT_DIR$/src/js/views/vue-components/mixins/Electron.ts" />
-    <entry file="file://$PROJECT_DIR$/src/js/views/vue-components/mixins/Common.ts" />
-    <entry file="file://$PROJECT_DIR$/src/js/views/vue-components/file-pathing/FilePathing.vue" />
-    <entry file="file://$PROJECT_DIR$/bit.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.bitmap">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/process/data/api.json" />
-    <entry file="file://$PROJECT_DIR$/process/modules/downloader.js" />
-    <entry file="file://$PROJECT_DIR$/src/js/routers/app_router.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/views/vue-components/mixins/paths-mixin.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/views/vue-components/mixins/electron-mixin.ts">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/ui/base/_base.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="11" selection-end-column="28" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/ui/buttons/_variables.sass">
       <provider selected="true" editor-type-id="text-editor">
@@ -589,34 +636,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/ui/forms/_forms.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/ui/buttons/_buttons.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="37" column="21" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/main.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3585">
           <caret line="316" column="33" selection-start-line="316" selection-start-column="33" selection-end-line="316" selection-end-column="33" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -679,42 +702,10 @@
     <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding>
-            <element signature="e#16#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/views/vue-components/pages/main/main.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="76" column="53" selection-start-line="76" selection-start-column="53" selection-end-line="76" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/views/vue-components/ui/tab/tab.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="70" column="141" selection-start-line="70" selection-start-column="141" selection-end-line="70" selection-end-column="141" />
-          <caret line="71" column="144" selection-start-line="71" selection-start-column="144" selection-end-line="71" selection-end-column="144" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/routers/paths.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="46" selection-start-column="46" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/views/vue-components/pages/page/page.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="727">
-          <caret line="65" column="80" selection-start-line="65" selection-start-column="80" selection-end-line="65" selection-end-column="80" />
         </state>
       </provider>
     </entry>
@@ -725,41 +716,206 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/ui/_variables.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/process/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-240">
-          <caret line="105" column="54" selection-start-line="105" selection-start-column="54" selection-end-line="105" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="69" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="140">
-            <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+            <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
+    <entry file="file://E:/SteamLibrary/steamapps/common/No Man's Sky/Binaries/SETTINGS/GCUSERSETTINGSDATA.MXML">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://E:/SteamLibrary/steamapps/common/No Man's Sky/Binaries/SETTINGS/TKGAMESETTINGS.MXML">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/SteamLibrary/steamapps/common/No Man's Sky/Binaries/SETTINGS/TKGRAPHICSSETTINGS.MXML">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="54" lean-forward="true" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="61" column="6" selection-start-line="61" selection-start-column="6" selection-end-line="61" selection-end-column="6" />
+        <state relative-caret-position="760">
+          <caret line="38" column="33" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/element-ui/lib/theme-chalk/main.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/element-ui/lib/theme-chalk/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-26460" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/ui/buttons/_buttons.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="37" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/ui/forms/_forms.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/ui/utilities/shadows/_shadows.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/ui/base/_base.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/ui/utilities/sizes/_sizes.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-133" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/main.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/ui/states/_states.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/ui/_variables.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1000">
+          <caret line="50" column="171" selection-start-line="50" selection-start-column="171" selection-end-line="50" selection-end-column="171" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/renderer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="192" selection-start-line="192" selection-end-line="192" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-141">
+          <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+          <folding>
+            <element signature="e#16#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/views/vue-components/ui/tab/tab.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="88" column="98" selection-start-line="88" selection-start-column="86" selection-end-line="88" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/views/vue-components/pages/page/page.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="26" column="30" selection-end-line="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/ui/utilities/positions/_positions.sass">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/ui/utilities/displays/_displays.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="17" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/ui/typography/_typography.sass">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/ui/typography/_variables.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="17" selection-start-line="5" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/ui/utilities/_utilities.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/views/vue-components/pages/main/main.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" selection-start-column="26" selection-end-line="1" selection-end-column="38" />
+          <folding>
+            <element signature="e#5623#5650#0" expanded="true" />
+            <element signature="e#6454#6514#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/views/vue-components/options/option-javascript/option-javascript.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+          <folding>
+            <element signature="e#1191#1218#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

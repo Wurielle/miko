@@ -12,6 +12,9 @@
 //         #{u(border-color, $bp)}
 //         #{u(border-color, $bp)}
 @each $bp, $bp-value in $bp-list
+    #{u(outline-none, $bp)}
+        outline: 0!important
+
     #{u(border-style-solid, $bp)}
         border-style: solid
         

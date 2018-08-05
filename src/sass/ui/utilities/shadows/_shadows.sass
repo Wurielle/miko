@@ -2,4 +2,14 @@
     @media (min-width: $bp-value)
         @each $shadow, $shadow-value in $shadow-list
             #{u(box-shadow, $bp, $shadow)}
-                box-shadow: $shadow-value
+                box-shadow: $box-shadow!important
+            #{u(box-shadow-interactive, $bp, $shadow)}
+                box-shadow: $box-shadow!important
+                transition: $animation2
+                &:focus
+                    outline: 0!important
+                &:hover
+                    outline: 0
+                    box-shadow: $box-shadow2!important
+                &:active
+                    box-shadow: none!important
