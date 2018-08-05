@@ -1,5 +1,5 @@
 # Miko 
-A handy browser for all your favorite things
+A handy browser for all your favorite things.
 
 <img src="https://i.imgur.com/Ikf4aer.gif?raw=true" width="100%">
 
